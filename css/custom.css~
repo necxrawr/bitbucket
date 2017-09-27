@@ -1,0 +1,215 @@
+html, body {
+    min-height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Hind', sans-serif !important;
+}
+
+.mainContainer > div {
+    min-height: 100vh;
+    background: #fff;
+    display:table;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    text-align:center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.buttonNav {
+    display: inline !important;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+}
+
+#header{
+    background: url('../images/header_bg.jpg') fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.mainContainer > div > div {
+    display:table-cell;
+    vertical-align:middle;
+    height: 100vh;
+}
+
+.mainContainer > div > div > div{
+    width: 75%;
+    margin: 100px auto 70px auto;
+    color: #0b1a27;
+
+}
+
+.fromLeft.in-view {
+    animation-name: transLeft;
+    animation-duration: 1.5s;
+}
+
+/* The animation code */
+@keyframes transLeft {
+    from {
+        left: -50%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.fromRight.in-view {
+    animation-name: transRight;
+    animation-duration: 1.5s;
+}
+
+/* The animation code */
+@keyframes transRight {
+    from {
+        right: -50%;
+    }
+    to {
+        right: 0;
+    }
+}
+
+span.title{
+    line-height: 50px;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    display: inline-flex;
+
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+hr.aboutBreak {
+    border-top: 8px solid #316c9f;
+    width: 80%;
+    margin: 0 0 25px 0;
+}
+
+div.aboutText h3 {
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 30px;
+    color: #316c9f;
+}
+
+p {
+    font-size: 22px;
+    text-align: left;
+    font-weight: 300;
+    text-width: 120%;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+#clients {
+    background: url('../images/clients_bg.jpg') fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.dark {
+    background: rgba(13,38,59, .97) !important;
+    border: 0px;
+    margin: 10px auto;
+}
+
+
+.dark:hover {
+    background: rgba(13,38,59, .8) !important;
+    border: 0px;
+    margin: 10px auto;
+    transition: all ease .3s;
+    box-shadow: 0px 1px 2px rgba(0,0,0,.5);
+}
+
+
+span.title-contrast{
+   line-height: 50px;
+   padding-top: 50px;
+   padding-bottom: 15px;
+   margin-bottom: 40px;
+   border-bottom: 1px solid #172e41;
+   display: inline-block;
+
+   text-transform: uppercase;
+   font-size: 40px;
+   font-weight: bold;
+   color: #172e41;
+   letter-spacing: 6px;
+}
+
+
+#contact div{
+    color: #0b1a27 !important;
+    float: none;
+}
+
+#contact p {
+    font-size: 18px;
+}
+
+#contactForm input,#contactForm textarea {
+    background: #f2f3f3;
+    border-radius: 1px;
+    border: 0px;
+    border-bottom: 5px solid #c9d7e3;
+    padding: 15px 12px 12px 12px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+#contactForm .btn-flexwidth {
+    width: 100%;
+    display: block;
+    background: #286191;
+    border: 0px;
+    padding: 15px;
+    font-weight: 500;
+}
+
+#footer {
+    margin: 0;
+}
+
+#footer > div {
+    height: 90px;
+    background: #0d171f;
+    color: #fff;
+    padding: 0 25px;
+}
+
+button.btn-social {
+    border-radius: 50%;
+    padding: 5px;
+}
+.FB {
+    background: #256299;
+}
+
+.IG {
+    background: #0c3246;
+}
+
+.TW {
+   background: #3994c3;
+}
